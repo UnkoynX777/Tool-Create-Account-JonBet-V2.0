@@ -1,0 +1,56 @@
+{
+    "input": {
+        "pageRegister": {
+            "email": "[data-testid=\"email-input\"]",
+            "password": "[data-testid=\"password-input\"]",
+            "cpf": "input[name=\"cpf\"]"
+        },
+        "pageProfile": {
+            "firstName": "input[data-testid=\"personal-info-first-name\"]",
+            "lastName": "input[data-testid=\"personal-info-last-name\"]",
+            "street": "[data-testid=\"personal-info-address\"] .input-wrapper input",
+            "city": ".col-md-6.col-xs-7 .input-wrapper input",
+            "zipCode": ".col-md-6.col-xs-5 .input-wrapper input",
+            "number": ".react-tel-input input.form-control"
+        },
+        "pageDeposit": {
+            "amount": "input[data-testid=\"amount\"]",
+            "qrCode": ".qr-code-text-inner"
+        }
+    },
+    "button": {
+        "pageRegister": {
+            "confirm": ".input-footer.register-button-landing .red.submit",
+            "acceptCookies": ".policy-regulation-button-container .primary.shared-button-custom.css-11gm6zt"
+        },
+        "pageProfile": {
+            "state": "[data-testid=\"region\"] .dropdown__trigger",
+            "stateSelected": "[data-testid=\"state\"]",
+            "country": ".country[data-testid=\"Brazil\"]",
+            "save": "[data-testid=\"personal-info-save-button\"]",
+            "number": "[data-testid=\"edit-phone-open\"]"
+        },
+        "pageDeposit": {
+            "header": "#header-deposit",
+            "bonus": "[data-testid=\"bonus-select-continue\"]",
+            "payment": ".payment-method span",
+            "deposit": "button[data-testid=\"modal-complete-button\"]"
+        }
+    },
+    "error": {
+        "pageLoading": {
+            "unableAccess": "span[jsselect=\"heading\"][jsvalues=\".innerHTML:msg\"][jstcache=\"9\"]",
+            "clouFlare": "h2.text-3xl.leading-tight.font-normal.mb-4.text-black-dark.antialiased[data-translate=\"what_happened\"]"
+        },
+        "pageRegister": {
+            "updated": "div.page-loadable.chunk-error h1",
+            "divMessage": "div.error-label",
+            "messageInternal": "div.message h1[data-testid=\"growl-message\"]"
+        }
+    },
+    "success": {
+        "pageLoged": {
+            "divMessage": ".welcome-card-container .welcome-header"
+        }
+    }
+}
