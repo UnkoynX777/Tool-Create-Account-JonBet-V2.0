@@ -129,7 +129,6 @@ async function showMenu() {
             createNewAccount(true);
             break;
         case "2":
-            console.log(yellow("\n   [!] Opção em desenvolvimento. Volte em breve!"));
             createNewAccount(false);
             break;
         case "0":
